@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="mx-14 text-center">
+        <p class="text-xl font-bold py-5">Multiple Table</p>
+        <button class="bg-[#416D19] text-[#070F2B] hover:bg-[#F57D1F] hover:text-[#211951] py-3 px-14 rounded-3xl" id="id1" onclick="color()">Click Here</button>
+    </div>
+    <script>
+        let i=1;
+        function color(){
+            if (i==1){
+
+            document.getElementById("id1").classList.remove("bg-[#416D19]");
+            document.getElementById("id1").classList.add("bg-[#F57D1F]");
+            i=2;
+            }
+            else{
+                document.getElementById("id1").classList.add("bg-[#F57D1F]");
+            document.getElementById("id1").classList.remove("bg-[#416D19]");
+            i=1;
+
+            }
+        }
+    </script>
+    <script>
+       function color(){
+       
+       let p;
+       for (p=1; p<=10; p++) {
+         let x;
+         x = 7 * p;
+         console.log(` ${7} X ${p} = ${x}`);
+         document.write(`<span">${7} X ${p} = ${x}</span><br/>`);
+    }
+    
+
+       }
+        
+    </script>
+    
+</body>
+</html>
